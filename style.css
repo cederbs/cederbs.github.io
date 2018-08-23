@@ -7,41 +7,5 @@
 body {
     width: 90%;
     position: relative;
-    margin: auto;
+    margin: 5% 5%;
     font-family: 'Josefin Sans', sans-serif;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 0 5%;
-}
-
-nav ul li a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000;
-}
-
-.row {
-    width: 100%
-}
-
-.column {
-    float: left;
-}
-
-.oneqtr {
-    width: 25%;
-    height: auto;
-}
-
-.threeqtr {
-    width: 75%;
-    height: auto;
-}
-
-#logo {
-    height: 2em;
-    padding-right: 1em;
-    width: auto;
-}
