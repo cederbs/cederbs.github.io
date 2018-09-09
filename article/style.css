@@ -1,0 +1,311 @@
+/*****************TAGS*******************/
+/**page layout**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-bottom: 8%;
+}
+
+/**image formatting*/
+img {
+    width: 100%;
+    height: auto;
+}
+
+/**typography**/
+h1, h2, p {
+    line-height: 1.5em;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display';
+    padding-bottom: .75em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+/***************** IDS AND CLASSES *******************/
+/***page layout*/
+#container {
+    width: 100%;
+    position: relative;
+    font-family: 'Work Sans';
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.row {
+    /**full width, keep sections from getting funny*/
+    background-size: contain;
+    overflow: auto;
+    padding: 2% 0;
+    line-height: 0;
+}
+
+.narrow {
+    /**80% width, for parallax sections*/
+    width: 80%;
+    margin: 0 10%;
+}
+
+.column {
+    /**fourth of the page, used in the boxes sections*/
+    width: 25%;
+    float: left;
+}
+
+/**typography*/
+header .center, .parallax .center {
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+}
+
+.emphasis {
+    font-style: italic;
+    font-size: 1em;
+}
+
+.shrink {
+    font-size: 1.25em;
+}
+
+/**parallax section formatting*/
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30%;
+    margin: 5%;
+}
+
+#compare1 {
+    /* The image used */
+    background-image: url(images/compare1.jpg);
+    /* Full height */
+    height: 100%;
+}
+
+#compare2 {
+    /* The image used */
+    background-image: url(images/compare2.jpg);
+    /* Full height */
+    height: 100%;
+}
+
+#compare3 {
+    /* The image used */
+    background-image: url(images/compare3.jpg);
+    /* Full height */
+    height: 100%;
+}
+
+#compare4 {
+    /* The image used */
+    background-image: url(images/compare4.jpg);
+    /* Full height */
+    height: 100%;
+}
+
+#compare5 {
+    /* The image used */
+    background-image: url(images/compare5.jpg);
+    /* Full height */
+    height: 100%;
+}
+
+/**boxes formatting*/
+.boxes p{
+    display: none;
+}
+
+.boxes .overlaycontain:hover p, .boxes .overlaycontain:active p{
+    display: block;
+}
+
+.boxes h2, p {
+    pointer-events: none;
+}
+
+/**boxes overlay setting*/
+.boxes .overlaycontain:hover .overlay{
+    background-color: #363636;
+}
+
+.boxes .overlaycontain:hover .whiteitem h2{
+    color: #f9bab5;
+}
+
+.boxes .overlaycontain:hover .greyitem h2{
+    color: #a2dada;
+}
+
+.boxes .overlaycontain:hover .greyitem p{
+    color: #ffffff;
+}
+
+.boxes .overlay, .boxes .whiteitem h2, .boxes .greyitem h2{
+    transition: .3s ease-in-out;
+}
+
+/**overlay formatting*/
+.overlaycontain {
+    position: relative;
+    overflow: auto;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.overlay {
+    /**opaque overlay*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right; 0;
+    height: 100%;
+    width: 100%;
+    opacity: .65;
+}
+
+/**overlay text formatting*/
+.overlaytext {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.left {
+    right: 55%;
+    left: 10%;
+    top: 50%;
+}
+
+.right {
+    left: 55%;
+    right: 10%;
+    top: 50%;
+}
+
+.center{
+    top: 40%;
+    left: 10%;
+    right: 10%;
+}
+
+.bot {
+    left: 10%;
+    bottom: 5%;
+    right: 10%;
+}
+
+/**overlay element background colors*/
+.blue {
+    background-color: #a2dada;
+}
+
+.pink {
+    background-color: #f27179;
+}
+
+.grey {
+    background-color: #393939;
+}
+
+/**overlay element colors*/
+.whiteitem {
+    color: #ffffff;
+}
+
+.greyitem {
+    color: #393939;
+}
+
+.blueitem {
+    color:#a2dada;
+}
+
+.pinkitem {
+    color:#f27179;
+}
+
+
+/************** MEDIA QUERIES *************/
+@media screen and (max-width: 1024px) {
+    
+    .column {
+        width: 50%;
+    }
+    
+    .parallax {
+        padding: 50% 5%;
+    }
+    
+    h2 {
+        font-size: 1.25em;
+        padding-bottom: 0;
+    }
+    
+    .floatright {
+        float: right;
+    }
+    
+    .boxes p {
+        display: block;
+    }
+    
+    .mobhide, .tabhide {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    h1 {
+        font-size: 1.75em;
+    }
+    
+    header .column {
+        width: 50%;
+    }
+    
+    .column {
+        width: 100%
+    }
+    
+    .left, .right {
+        top: 50%;
+        left: 5%;
+        right: 5%;
+    }
+    
+    .parallax {
+        padding: 80% 5%;
+    }
+    
+    .floatright {
+        display: block;
+    }
+    
+    .tabhide {
+        display: block;
+    }
+}
