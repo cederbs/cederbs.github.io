@@ -74,7 +74,8 @@ img {
 /**layout*/
 .container {
     width: 85%;
-    overflow: auto;
+    height: auto;
+    overflow: hidden;
     position: relative;
     margin: auto;
     padding: 2% 0;
@@ -83,7 +84,8 @@ img {
 
 .row {
     width: 100%;
-    overflow: auto;
+    height: auto;
+    overflow: hidden;
     clear: both;
     padding: 1% 0;
 }
