@@ -60,9 +60,9 @@ ul li a{
 
 ul li a:hover {
     color: lightcoral;
-    font-weight: 300;
+    text-decoration: underline;
+    text-decoration-style: dashed;
 }
-
 
 /**IMAGES*/
 img {
