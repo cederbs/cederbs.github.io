@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-header {
-    margin-bottom: 8%;
+header, footer {
+    margin-bottom: 3%;
 }
 
 /**image formatting*/
@@ -34,7 +34,7 @@ h2 {
     font-size: 1.75em;
 }
 
-footer p {
+footer p, #author {
     text-align: center;
 }
 
@@ -53,7 +53,6 @@ footer p {
     /**full width, keep sections from getting funny*/
     background-size: contain;
     overflow: auto;
-    padding: 2% 0;
     line-height: 0;
 }
 
@@ -275,6 +274,10 @@ header .center, .parallax .center {
     .mobhide, .tabhide {
         display: none;
     }
+    
+    footer {
+        padding-bottom: 10%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -297,8 +300,18 @@ header .center, .parallax .center {
         right: 5%;
     }
     
+    .center {
+        top: 10%;
+        left: 5%;
+        right: 5%;
+    }
+    
+    .center p, .center h2 {
+        text-align: left;
+    }
+    
     .parallax {
-        padding: 80% 5%;
+        padding: 90% 5%;
     }
     
     .floatright {

@@ -3,7 +3,7 @@
     <head>
         <!--Basic Page Needs-->
         <meta charset="utf-8">
-        <title>About : Sarah Cederberg</title>
+        <title>About—Sarah Cederberg</title>
         <meta name="author" content="Sarah Cederberg">
 
         <!-- Mobile Specific-->
@@ -14,29 +14,23 @@
 
         <!--TYPEFACE-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+        
+        <!--SCRIPTS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="nav.js"></script>
 
     </head>
     
+    <!--container for all page objects-->
     <body class="container">
-        <!--header row, name and portfolio navigation-->
-        <header class="row">
-            
-            <!--name should push nav over to the right. column mod classes should become 100% on mobile-->
-            <h1 class="threefourth column"><a href="index.html">Sarah Cederberg</a></h1>
-            <nav class="onefourth column">
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </header>
+        
+        <!--header row: links to nav.html file using nav.js script-->
+        <header class="row" id="nav"></header>
         
         <!--bio image-->
         <div class="row">
             <div class="full column">
-                <div class="imgcontain">
-                    <img src="images/homeplaceholder.jpg">
-                </div>
+                <div class="imgcontain"></div>
             </div>
         </div>
         
@@ -45,8 +39,10 @@
             
             <!--contact and resume-->
             <div class="onefourth column">
-                <button>Resumé</button>
-                <button>Contact Me</button>
+                <ul>
+                    <li><a href="#">Resumé</a></li>
+                    <li><a href="mailto:scederbergdesign@gmail.com">Email</a></li>
+                </ul>
             </div>
             
             <!--about me-->
@@ -58,10 +54,6 @@
         </div>
         
         <!--footer row, copyright-->
-        <footer class="row">
-            <div class="full column">
-                <p>© Sarah Cederberg 2018</p>
-            </div>
-        </footer>
+        <footer class="row" id="foot"></footer>
     </body>
 </html>

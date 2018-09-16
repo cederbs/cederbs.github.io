@@ -15,80 +15,96 @@
         <!--TYPEFACE-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
 
+        <!--SCRIPTS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="nav.js"></script>
+        
     </head>
     
     <!--container for all page objects-->
     <body class="container">
         
         <!--header row, name and portfolio navigation-->
-        <header class="row">
-            
-            <!--name should push nav over to the right. column mod classes should become 100% on mobile-->
-            <h1 class="threefourth column"><a href="index.html">Sarah Cederberg</a></h1>
-            
-            <nav class="onefourth column">
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </header>
+        <header class="row" id="nav"></header>
         
-        <!--top row contains two larger imgs-->
+        <!--top row-->
         <div class="row">
             
-            <!--project 1: reroll branding-->
+            <!--reroll-->
             <div class="half column">
                 <div class="imgcontain">
-                    <img src="images/homeplaceholder.jpg">
+                    <a href="reroll.html">
+                        <img src="images/reroll-thumb.jpg">
+                        <div class="overlaytext">Reroll</div>
+                        <div class="overlay"></div>
+                    </a>
                 </div>
             </div>
             
-            <!--project 2: interactive article-->
+            <!--interactive article-->
             <div class="half column">
                 <div class="imgcontain">
-                    <img src="images/homeplaceholder.jpg">
+                    <a href="article.html">
+                        <img src="images/article-thumb.jpg">
+                        <div class="overlaytext">Interactive Article</div>
+                        <div class="overlay"></div>
+                    </a>
                 </div>
             </div>
         </div>
         
-        <!--bot row contains space for four smaller imgs-->
+        <!--middle row-->
         <div class="row">
             
-            <!--project 3: little debbie-->
-            <div class="onefourth column">
+            <!--square-->
+            <div class="half column">
                 <div class="imgcontain">
-                    <img src="images/homeplaceholder.jpg">
+                    <a href="square.html">
+                        <img src="images/square-thumb.jpg">
+                        <div class="overlaytext">Square Extension</div>
+                        <div class="overlay"></div>
+                    </a>
                 </div>
             </div>
             
-            <!--project 4: book production-->
-            <div class="onefourth column">
+            <!--citydog-->
+            <div class="half column">
                 <div class="imgcontain">
-                    <img src="images/homeplaceholder.jpg">
+                    <a href="citydog.html">
+                        <img src="images/citydog-thumb.jpg">
+                        <div class="overlaytext">Citydog Rebrand</div>
+                        <div class="overlay"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!--bottom row-->
+        <div class="row">
+            <!--cosmic brownies-->
+            <div class="half column">
+                <div class="imgcontain">
+                    <a href="cosmicbrownies.html">
+                        <img src="images/brownies-thumb.jpg">
+                        <div class="overlaytext">Cosmic Brownies</div>
+                        <div class="overlay"></div>
+                    </a>
                 </div>
             </div>
             
-            <!--project 5: square-->
-            <div class="onefourth column">
+            <!--eye see-->
+            <div class="half column">
                 <div class="imgcontain">
-                    <img src="images/homeplaceholder.jpg">
-                </div>
-            </div>
-            
-            <!--project 6: citydog branding-->
-            <div class="onefourth column">
-                <div class="imgcontain">
-                    <img src="images/homeplaceholder.jpg">
+                    <a href="eyesee.html">
+                        <img src="images/eyesee-thumb.jpg">
+                        <div class="overlaytext">Book Production</div>
+                        <div class="overlay"></div>
+                    </a>
                 </div>
             </div>
         </div>
         
         <!--footer row, copyright-->
-        <footer class="row">
-            <div class="full column">
-                <p>© Sarah Cederberg 2018</p>
-            </div>
-        </footer>
+        <footer class="row" id="foot"></footer>
     </body>
 </html>
