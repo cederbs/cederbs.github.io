@@ -180,4 +180,8 @@ img {
     header {
         text-align: center;
     }
+    
+    .narrow {
+        width: 90%;
+    }
 }
