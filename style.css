@@ -75,7 +75,7 @@ img {
 .container {
     width: 85%;
     height: auto;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     margin: auto;
     padding: 2% 0;
