@@ -42,27 +42,26 @@ h3 {
     padding-top: 1.5em;
 }
 
+h3:first-child {
+    padding-top: 0;
+}
+
 /**LISTS*/
 ul li {
-    display: inline-block;
-    padding: 0 4%;
+    list-style: none;
+    padding-top: 1em;
 }
 
-
-/**LINKS*/
-ul li a{
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #999;
+ul li a {
     font-size: .75em;
-    
 }
 
-ul li a:hover {
+ul li a:hover{
     color: lightcoral;
     text-decoration: underline;
     text-decoration-style: dashed;
 }
+
 
 /**IMAGES*/
 img {
@@ -87,17 +86,17 @@ img {
     height: auto;
     overflow: hidden;
     clear: both;
-    padding: 1% 0;
-}
-
-.column {
-    float: left;
-    padding: 0 1%;
+    padding: 1.5% 0;
 }
 
 .narrow {
     width: 75%;
     margin: auto;
+}
+
+.column {
+    float: left;
+    padding: 0 1%;
 }
 
 .projectname {
@@ -120,6 +119,42 @@ img {
 
 .full {
     width: 100%;
+}
+
+/**type*/
+.center {
+    text-align: center;
+}
+
+/**lists and buttons**/
+.inline {
+    display: inline-block;
+    padding: 0 4%;
+}
+
+.inline a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #7a7a7a;
+}
+
+.button {
+    font-size: 1em;
+    padding: 1em 2em;
+    text-align: center;
+    border-style: solid;
+    border-radius: .25em;
+    border-width: thin;
+    color: lightcoral;
+}
+
+.button:hover {
+    background-color: lightcoral;
+    color: #fff;
+}
+
+#buttonspace {
+    padding: 5% 0;
 }
 
 /**images*/
@@ -159,12 +194,17 @@ img {
     z-index: 2;
 }
 
+.incolumn {
+    padding: 1% 0;
+}
+
 /**MEDIA QUERIES*/
 @media only screen and (max-width: 710px) {
     
     .container {
         width: 90%;
         margin: auto;
+        padding-bottom: 15%;
     }
     
     .row {
