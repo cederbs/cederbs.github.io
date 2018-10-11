@@ -41,10 +41,17 @@ h3 {
     font-size: .75em;
     text-transform: uppercase;
     padding-top: 1.5em;
+    color: #e57373;
 }
 
 h3:first-child {
     padding-top: 0;
+}
+
+blockquote {
+    font-style: italic;
+    padding-top: 1em;
+    color: #e57373;
 }
 
 /**LISTS*/
@@ -58,7 +65,7 @@ ul li a {
 }
 
 ul li a:hover{
-    color: lightcoral;
+    color: #e57373;
     text-decoration: underline;
     text-decoration-style: dashed;
 }
@@ -87,7 +94,7 @@ img {
     height: auto;
     overflow: hidden;
     clear: both;
-    padding: 1.5% 0;
+    padding: 1% 0;
 }
 
 .narrow {
@@ -146,11 +153,11 @@ img {
     border-style: solid;
     border-radius: .25em;
     border-width: thin;
-    color: lightcoral;
+    color: #e57373;
 }
 
 .button:hover {
-    background-color: lightcoral;
+    background-color: #e57373;
     color: #fff;
 }
 
@@ -195,10 +202,6 @@ img {
     z-index: 2;
 }
 
-.incolumn {
-    padding: 1% 0;
-}
-
 /**MEDIA QUERIES*/
 @media only screen and (max-width: 710px) {
     
@@ -232,6 +235,6 @@ img {
 
 @media only screen and (min-width: 1200px) {
     .container {
-        max-width: 1366px;
+        max-width: 1500px;
     }
 }
