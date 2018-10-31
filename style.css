@@ -23,9 +23,13 @@ body {
     background-color: #fcfcfc;
 }
 
+header a {
+    color: #000;
+}
+
 a {
     text-decoration: none;
-    color: #000;
+    color: #e57373;
 }
 
 h1 {
@@ -220,8 +224,12 @@ img {
         padding: 2% 0;
     }
     
-    .onefourth, .half, .threefourth {
+    .half, .threefourth, header .onefourth {
         width: 100%;
+    }
+    
+    .onefourth {
+        width: 50%;
     }
     
     header {
