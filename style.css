@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 footer {
     text-align: center;
     position: fixed;
@@ -14,73 +13,73 @@ footer {
     background-color: #fcfcfc;
 }
 
-
 /**TYPOGRAPHY*/
 body {
     font-family: "Montserrat", sans-serif;
-    font-weight: 300;
     line-height: 1.5em;
     background-color: #fcfcfc;
 }
-
-header a {
-    color: #000;
-}
-
-a {
-    text-decoration: none;
-    color: #e57373;
-}
-
 h1 {
     font-size: 1.25em;
 }
-
 h2 {
     font-size: 3em;
     line-height: 1.5em;
-    font-weight: 600;
 }
-
 h3 {
-    font-size: .75em;
+    font-size: 1em;
     text-transform: uppercase;
-    padding-top: 1.5em;
     color: #e57373;
 }
-
-h3:first-child {
+h4 {
+    font-size: 1em;
+    padding-top: 1em;
+}
+h4:first-child {
     padding-top: 0;
 }
-
 blockquote {
     font-style: italic;
     padding-top: 1em;
     color: #e57373;
 }
-
-/**LISTS*/
-ul li {
-    list-style: none;
-    padding-top: 1em;
+small {
+    font-size: .9em;
 }
 
-ul li a {
-    font-size: .75em;
+/**NAVIGATION*/
+header a {
+    color: #000;
 }
-
-ul li a:hover{
+a {
+    text-decoration: none;
     color: #e57373;
-    text-decoration: underline;
-    text-decoration-style: dashed;
 }
-
+nav ul li {
+    display: inline-block;
+    padding: 0 4%;
+}
+nav ul li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #7a7a7a;
+}
 
 /**IMAGES*/
 img {
     width: 100%;
 }
 
+/**LISTS*/
+ul li{
+    list-style: none;
+    padding-top: 1em;
+    font-size: .75em;
+}
+ul li a:hover{
+    color: #e57373;
+    text-decoration: underline;
+}
 
 /**IDS AND CLASSES*/
 /**layout*/
@@ -93,27 +92,18 @@ img {
     padding: 2% 0;
     margin-bottom: 4%;
 }
-
 .row {
     width: 100%;
-    height: auto;
     overflow: hidden;
     clear: both;
     padding: 1% 0;
 }
-
-.narrow {
-    width: 75%;
-    margin: auto;
-}
-
 .column {
     float: left;
     padding: 0 1%;
 }
-
 .projectname {
-    padding: 5% 0;
+    padding: 2% 0 4%;
     text-align: center;
 }
 
@@ -121,17 +111,21 @@ img {
 .onefourth {
     width: 25%;
 }
-
 .half {
     width: 50%;
 }
-
 .threefourth {
     width: 75%;
 }
-
 .full {
     width: 100%;
+}
+.sectiontitle {
+    width: 20%;
+}
+.sectiontext {
+    width: 80%;
+    
 }
 
 /**type*/
@@ -139,19 +133,13 @@ img {
     text-align: center;
 }
 
-/**lists and buttons**/
-.inline {
-    display: inline-block;
-    padding: 0 4%;
+/**buttons*/
+#buttonspace {
+    /**space holding the button element*/
+    padding: 5% 0;
 }
-
-.inline a {
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #7a7a7a;
-}
-
 .button {
+    /**button type and border*/
     font-size: 1em;
     padding: 1em 2em;
     text-align: center;
@@ -160,22 +148,17 @@ img {
     border-width: thin;
     color: #e57373;
 }
-
 .button:hover {
+    /**makes the button react to user*/
     background-color: #e57373;
     color: #fff;
 }
 
-#buttonspace {
-    padding: 5% 0;
-}
-
-/**images*/
+/**image overlay*/
 .imgcontain {
     line-height: 0;
     position: relative;
 }
-
 .overlay {
     position: absolute;
     top: 0;
@@ -184,27 +167,30 @@ img {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: .5;
+    opacity: 0;
     transition: .5s ease;
     background-color: #000;
 }
-
-.imgcontain:hover .overlay, .imgcontain:hover .overlaytext{
-    opacity: 0;
-    transition: .5s ease;
-}
-
 .overlaytext {
     color: #fff;
+    opacity: 0;
     position: absolute;
     line-height: 1.5em;
     font-size: 1.25em;
     font-weight: 600;
-    bottom: 40%;
+    bottom: 45%;
     left: 10%;
     right: 10%;
     text-align: center;
     z-index: 2;
+}
+.imgcontain:hover .overlay {
+    opacity: .75;
+    transition: .5s ease;
+}
+.imgcontain:hover .overlaytext {
+    opacity: 1;
+    transition: .5s ease;
 }
 
 /**MEDIA QUERIES*/
@@ -215,33 +201,25 @@ img {
         margin: auto;
         padding-bottom: 15%;
     }
-    
     .row {
         padding: 0;
     }
-    
     .column {
         padding: 2% 0;
     }
-    
-    .half, .threefourth, header .onefourth {
+    .half, .threefourth, header .onefourth, .sectiontitle, .sectiontext {
         width: 100%;
     }
-    
     .onefourth {
         width: 50%;
     }
-    
     header {
         text-align: center;
     }
-    
-    .narrow {
-        width: 90%;
-        margin: auto;
+    h2 {
+        font-size: 2em;
     }
 }
-
 @media only screen and (min-width: 1200px) {
     .container {
         max-width: 1500px;
