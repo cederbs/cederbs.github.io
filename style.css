@@ -55,6 +55,9 @@ a {
     text-decoration: none;
     color: #e57373;
 }
+nav {
+    float: right;
+}
 nav ul li, .contact li{
     display: inline-block;
 }
@@ -65,6 +68,10 @@ nav ul li a, .contact{
 }
 nav ul li {
     padding: 0 4%;
+    float: right;
+}
+nav ul li:first-child {
+    padding-right: 0;
 }
 
 /**IMAGES*/
@@ -225,6 +232,10 @@ ul li a:hover{
     }
     h2 {
         font-size: 2em;
+    }
+    nav ul li, nav ul li:first-child {
+        float: none;
+        padding: 0 2%;
     }
 }
 @media only screen and (min-width: 1200px) {
