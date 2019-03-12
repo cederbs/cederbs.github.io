@@ -58,9 +58,6 @@ a {
 nav {
     float: right;
 }
-nav ul li, .contact li{
-    display: inline-block;
-}
 nav ul li a, .contact{
     text-transform: uppercase;
     font-weight: 600;
@@ -69,6 +66,7 @@ nav ul li a, .contact{
 nav ul li {
     padding: 0 4%;
     float: right;
+    display: inline-block;
 }
 nav ul li:first-child {
     padding-right: 0;
@@ -145,6 +143,7 @@ ul li a:hover{
 /**links*/
 .contact li{
     padding-right: 4%;
+    display: inline-block;
 }
 
 /**buttons*/
