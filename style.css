@@ -10,14 +10,14 @@ footer {
     bottom: 0;
     left: 0;
     z-index: 3;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 /**TYPOGRAPHY*/
 body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.5em;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 h1 {
     font-size: 1.25em;
@@ -102,7 +102,8 @@ ul li a:hover{
 .row {
     width: 100%;
     clear: both;
-    padding: 2% 0;
+    overflow:auto;
+    padding: 1% 0;
 }
 .column {
     float: left;
@@ -114,9 +115,6 @@ ul li a:hover{
 }
 #foot {
     padding: 1% 0;
-}
-#last {
-    padding-bottom: 32%;
 }
 
 /**column classes*/
@@ -227,9 +225,6 @@ ul li a:hover{
         margin: auto;
         padding-bottom: 24%;
     }
-    .row {
-        padding: 0;
-    }
     .column {
         padding: 2% 0;
     }
@@ -248,9 +243,6 @@ ul li a:hover{
     nav ul li, nav ul li:first-child {
         float: none;
         padding: 0 2%;
-    }
-    #last {
-        padding-bottom: 56%;
     }
 }
 @media only screen and (min-width: 1200px) {
