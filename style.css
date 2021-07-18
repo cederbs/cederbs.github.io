@@ -103,14 +103,14 @@ ul li a:hover{
     width: 100%;
     clear: both;
     overflow:auto;
-    padding: 1% 0;
+    padding: 1.5% 0;
 }
 .column {
     float: left;
     padding: 0 1%;
 }
 .projectname {
-    padding: 2% 0 4%;
+    padding: 2% 0 2%;
     text-align: center;
 }
 #foot {
