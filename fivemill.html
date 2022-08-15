@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--basics-->
+        <meta charset="utf-8">
+        <title>Five Mill</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+        <meta name="author" content="Sarah Cederberg">
+        <meta name="description" content="A client analytics dashboard UI for Five Mill.">
+        
+        <!--responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--css-->
+        <link rel="stylesheet" href="style.css">
+        
+        <!--typography-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+
+        <!--scripts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="nav.js"></script>
+        
+        <!--google analytics-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127880579-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-127880579-1');
+        </script>      
+    </head>
+
+    <body class="container">
+        <!--element: nav-->
+        <header class="row" id="nav"></header>
+        <div class="four grid">
+            <img class="griditem" src="images/fivemill-img1.jpg">
+            <img class="griditem" src="images/fivemill-compare.gif">
+        </div>
+        <div class="two column">
+            <small>Five Mill</small>
+            <h2>Client Dashboard</h2>
+            <p class="brief">Design the client analytics dashboard UI for the Five Mill's client, Quicken.</p>
+            <p>Five Mill is a digital marketing agency based out of San Francisco. One of the many services they offer to their clients is tracking and reporting via a customized dashboard suited to the particular client's interests and needs.</p>
+            <p>A large portion of the project focused on tweaking the data visualization to fit the client's branding and maintaining a straightforward but comprehensive range of data for Quicken to utilize at a glance.</p>
+            <h3 id="buttonspace">
+                <a class="button" href="https://www.figma.com/proto/BmTcCQyp5WORWoX2BY5neJ/Dashboard-Five-Mill?node-id=2%3A18400&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=2%3A18400" target="_blank">View Prototype</a>
+            </h3>
+        </div>
+        <!--element: footer-->
+        <footer class="row" id="foot"></footer>
+    </body>
+</html>

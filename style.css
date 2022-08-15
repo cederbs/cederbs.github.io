@@ -6,28 +6,24 @@
 }
 footer {
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-    background-color: #FFFFFF;
 }
 
 /**TYPOGRAPHY*/
 body {
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.5em;
+    font-family: 'Montserrat', sans-serif;
     background-color: #FFFFFF;
 }
 h1 {
     font-size: 1.25em;
 }
 h2 {
-    font-size: 3em;
-    line-height: 2em;
+    font-size: 2em;
+    line-height: 1.25em;
+    padding: .25em 0 .5em 0;
 }
 h3 {
     font-size: 1em;
+    padding-bottom: .1em;
     text-transform: uppercase;
     color: #e57373;
 }
@@ -38,13 +34,20 @@ h4 {
 h4:first-child {
     padding-top: 0;
 }
-blockquote {
-    font-style: italic;
-    padding-top: 1em;
-    color: #e57373;
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-bottom: 1em;
 }
 small {
     font-size: .9em;
+    padding-top: 4em;
+    display: block;
+}
+
+.brief {
+    padding-bottom: 3em;
 }
 
 /**NAVIGATION*/
@@ -55,21 +58,17 @@ a {
     text-decoration: none;
     color: #e57373;
 }
-nav {
-    float: right;
-}
+
 nav ul li a, .contact{
     text-transform: uppercase;
-    font-weight: 600;
-    color: #7a7a7a;
+    font-weight: 500;
+    color: #666666;
 }
 nav ul li {
     padding: 0 4%;
-    float: right;
     display: inline-block;
-}
-nav ul li:first-child {
-    padding-right: 0;
+    float: right; 
+    line-height: 3em; 
 }
 
 /**IMAGES*/
@@ -77,11 +76,19 @@ img {
     width: 100%;
 }
 
+#home {
+    line-height: 0;
+    position: relative;
+}
+#home img {
+    height: 3em;
+    width: auto;
+}
 /**LISTS*/
 ul li{
     list-style: none;
     padding-top: 1em;
-    font-size: .75em;
+    font-size: 1em;
 }
 ul li a:hover{
     color: #e57373;
@@ -96,8 +103,12 @@ ul li a:hover{
     overflow: auto;
     position: relative;
     margin: auto;
-    padding: 2% 0;
-    margin-bottom: 4%;
+    padding: 1% 0;
+}
+
+.card {
+    float: left;
+    padding: 1%;
 }
 .row {
     width: 100%;
@@ -105,43 +116,47 @@ ul li a:hover{
     overflow:auto;
     padding: 1% 0;
 }
-.column {
+.column, .grid {
     float: left;
     padding: 0 1%;
 }
-.projectname {
-    padding: 2% 0 4%;
-    text-align: center;
-}
-#foot {
-    padding: 1% 0;
+
+.griditem {
+    float: left;
+    padding: 1%;
 }
 
 /**column classes*/
-.onefourth {
-    width: 25%;
+
+.one {
+    width: 16.66%;
 }
-.half {
+
+.two {
+    width: 33.33%;
+}
+
+.three {
     width: 50%;
 }
-.threefourth {
-    width: 75%;
+
+.four {
+    width: 66.66%;
 }
-.full {
+
+.five {
+    width: 83.33%;
+}
+
+.six {
     width: 100%;
-}
-.sectiontitle {
-    width: 20%;
-}
-.sectiontext {
-    width: 80%;
-    
 }
 
 /**type*/
 .center {
     text-align: center;
 }
+
 
 /**links*/
 .contact li{
@@ -152,7 +167,7 @@ ul li a:hover{
 /**buttons*/
 #buttonspace {
     /**space holding the button element*/
-    padding: 5% 0;
+    padding: 3em 0 0 0;
 }
 .button {
     /**button type and border*/
@@ -206,7 +221,7 @@ ul li a:hover{
     z-index: 2;
 }
 .overlaytext small {
-    font-weight: 300;
+    font-weight: 400;
 }
 .imgcontain:hover .overlay {
     opacity: .75;
@@ -218,33 +233,38 @@ ul li a:hover{
 }
 
 /**MEDIA QUERIES*/
-@media only screen and (max-width: 710px) {
-    
-    .container {
-        width: 90%;
-        margin: auto;
-        padding-bottom: 24%;
-    }
-    .column {
-        padding: 2% 0;
-    }
-    .half, .threefourth, header .onefourth, .sectiontitle, .sectiontext {
+@media only screen and (max-width: 412px) {
+    .two {
         width: 100%;
     }
-    .onefourth {
-        width: 50%;
-    }
-    header {
-        text-align: center;
-    }
-    h2 {
-        font-size: 2em;
+}
+@media only screen and (max-width: 810px) {
+    .container {
+        width: 85%;
+        margin: auto;
+        padding-bottom: 24%;
     }
     nav ul li, nav ul li:first-child {
         float: none;
         padding: 0 2%;
     }
+    nav .two, header .two {
+        width: 100%;
+    }
+    header {
+        text-align: center;
+    }
+    .two, .three, .four, .card {
+        width: 100%;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .card {
+        width: 50%;
+    }
 }
+
 @media only screen and (min-width: 1200px) {
     .container {
         max-width: 1500px;

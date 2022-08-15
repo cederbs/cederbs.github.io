@@ -1,68 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--Basic Page Needs-->
+        <!--basics-->
         <meta charset="utf-8">
-        <title>Project—Sarah Cederberg</title>
+        <title>Project Name</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.svg">
         <meta name="author" content="Sarah Cederberg">
-        <meta name="description" content="Example description that's short and sweet.">
+        <meta name="description" content="Project description.">
         
-        <!-- Mobile Specific-->
+        <!--responsive-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!--CSS-->
+        <!--css-->
         <link rel="stylesheet" href="style.css">
         
-        <!--TYPEFACE-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
+        <!--typography-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
 
-        <!--SCRIPTS-->
+        <!--scripts-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="nav.js"></script>
         
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!--google analytics-->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127880579-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'UA-127880579-1');
-        </script> 
+        </script>      
     </head>
-    
-    <!--container for all page objects-->
+
     <body class="container">
-        
-        <!--header row, name and portfolio navigation-->
+        <!--element: nav-->
         <header class="row" id="nav"></header>
-        
-        <!--cover image: give a quick snapshot of a final deliverable, or evoke project mood-->
         <div class="row">
-            <div class="full column"></div>
+            <div class="four column">
+                <img src="images/placeholder-thumb.jpg">
+            </div>
+            <div class="two column">
+                <h2>Project</h2>
+                <p class="highlight">What is this</p>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
         </div>
-        
-        <!--overview: name and product statement-->
-        <div class="row">
-            <div class="projectname full column"></div>
-        </div>
-        
-        <!--intro: includes the brief and additional introductory information, such as contribution, concept-->
-        <div class="row">
-            <div class="full column"></div>
-        </div>
-        
-        <!--image grid: contains additional photos of assets, mockups, or product photos-->
-        <div class="row">
-            <div class="half column"></div>
-            <div class="half column"></div>
-        </div>
-        
-        <!--process: short writeup on concept ideation, research, prototyping, testing, etc-->
-        <div class="row">
-            <div class="full column"></div>
-        </div>
-        
-        <!--footer row, copyright-->
+        <!--element: footer-->
         <footer class="row" id="foot"></footer>
     </body>
 </html>
